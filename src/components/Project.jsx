@@ -1,5 +1,4 @@
 import React from "react";
-import heroImg from '../assets/Nicolas.png'
 import zebranceImg from '../assets/zebrance.png'
 import starEvaluatorImg from '../assets/star-evaluator.png'
 

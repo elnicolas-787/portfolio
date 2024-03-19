@@ -3,9 +3,9 @@ import Service from "./Service";
 
 function About() {
   const skills = [
-    { id: 1, name: 'UI & UX DESIGNING', image: "/assets/icons/design.png" },
-    { id: 2, name: 'WEB DEVELOPMENT', image: "/assets/icons/web-dev.png" },
-    { id: 3, name: 'MOBILE DEVELOPMENT', image: "/assets/icons/mob-dev.png" },
+    { id: 1, name: 'UI & UX DESIGNING', image: "/assets/icons/design.png", alt: "Design" },
+    { id: 2, name: 'WEB DEVELOPMENT', image: "/assets/icons/web-dev.png", alt: "Web Development" },
+    { id: 3, name: 'MOBILE DEVELOPMENT', image: "/assets/icons/mob-dev.png", alt: "Mobile Development" },
   ]
 
   return (
@@ -18,7 +18,6 @@ function About() {
         advance UI design principales. Here are the major skills i have.{" "}
       </p>
 
-      {/* experience section */}
       <div className="md:flex items-center my-7">
         <p className="text-blue-400 text-8xl font-bold">1+</p>
         <p className="text-white text-2xl md:ml-5">
@@ -26,12 +25,11 @@ function About() {
           a seamless web experience for end users.</p>
       </div>
 
-      {/* skills card */}
       <div className="flex flex-col md:flex-row justify-center">
         {
           skills.map((skill, index) => (
             <div key={index} className="skills md:w-[256px] md:h-[254px] bg-gray-400 rounded-xl hover:bg-blue-400 flex flex-col items-baseline justify-end my-3 md:m-3 p-5 shadow-sm transition-all duration-500 space-y-5">
-              <img src={skill.image} alt="Image Skill" width={50} />
+              <img src={skill.image} alt={skill.alt} width={50} />
               <p className="text-2xl text-white font-semibold">{ skill.name }</p>
             </div>
           ))

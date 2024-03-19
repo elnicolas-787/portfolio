@@ -1,5 +1,4 @@
 import React from 'react'
-import html from '../assets/zebrance.png'
 
 function Experience() {
   return (
