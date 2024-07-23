@@ -9,7 +9,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto overflow-x-hidden">
+    <div className="mx-auto overflow-x-hidden">
       <Header />
       <Home />
       <About />

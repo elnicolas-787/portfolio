@@ -1,21 +1,21 @@
-import React from 'react'
-import facebook from '../assets/facebook.png'
-import twitter from '../assets/x-twitter.png'
-import tictoc from '../assets/tic-tac.png'
-import linkedin from '../assets/linkedin.png'
+import React from "react";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/x-twitter.png";
+import tictoc from "../assets/tic-tac.png";
+import linkedin from "../assets/linkedin.png";
 
 function Footer() {
   return (
-    <div className='md:px-10 px-7 mt-24'>
-      <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
-        <p>@ Copyright 2024 | Tahirinirina Nicolas</p>
-        <p className='hidden sm:block'>Fullstack Developer</p>
-        <p className='hidden sm:block'>Mobile Developer</p>
-        <p className='hidden sm:block'>UI Designer</p>
-        <p className='hidden sm:block'>Designed by @Nicolas</p>
-      </div>
+    <div className="md:px-10 px-7 mt-24">
+      <div className="max-w-7xl mx-auto pt-20">
+        <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
+          <p>@ Copyright 2024 | Tahirinirina Nicolas</p>
+          <p className="hidden sm:block">Fullstack Developer</p>
+          <p className="hidden sm:block">Mobile Developer</p>
+          <p className="hidden sm:block">UI Designer</p>
+        </div>
 
-      <div className='flex mt-10 mb-5 justify-center'>
+        {/* <div className='flex mt-10 mb-5 justify-center'>
         <a href="/" target='_blank' rel='norefferer'>
           <img src={facebook} alt="Facebook" width={30} />
         </a>
@@ -28,9 +28,10 @@ function Footer() {
         <a href="/" className='ml-4' target='_blank' rel='norefferer'>
           <img src={tictoc} alt="Tic Toc" width={30} />
         </a>
+      </div> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

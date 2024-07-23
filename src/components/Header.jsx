@@ -14,8 +14,9 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-7xl">
-      <div className="md:flex items-center justify-between py-4 md:py-10 md:px-10 px-7">
+    <header className="w-full fixed z-50 bg-black">
+      <div className="max-w-7xl mx-auto">
+      <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* Section logo */}
         <div className="font-bold md:text-4xl text-2xl cursor-pointer flex items-center gap-1">
           <span className="text-blue-400 hover:text-white transition-all duration-500">
@@ -32,7 +33,7 @@ function Header() {
         </div>
 
         {/* Link items */}
-        <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 bg-gray-300 md:bg-transparent transition-all duration-500 ease-in ${open ? "top-12" : "top-[-490px]"}`}>
+        <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 bg-gray-600 md:bg-transparent transition-all duration-500 ease-in ${open ? "top-12" : "top-[-490px]"}`}>
           {links.map((link) => (
             <li key={link.id} className="md:ml-8 md:my-0 my-7 font-semibold">
               <Link
@@ -50,7 +51,8 @@ function Header() {
           ))}
         </ul>
       </div>
-    </div>
+      </div>
+    </header>
   );
 }
 
