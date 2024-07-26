@@ -1,8 +1,4 @@
 import React from "react";
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/x-twitter.png";
-import tictoc from "../assets/tic-tac.png";
-import linkedin from "../assets/linkedin.png";
 
 function Footer() {
   return (
