@@ -10,7 +10,7 @@ function Project() {
       title: "RECOVEREO",
       image: recovereoImg,
       description: "Plateforme spécialisée dans le recouvrement de créances, aidant les créanciers à sécuriser et gérer leurs paiements impayés grâce à des solutions amiables et judiciaires",
-      link: "www.recovereo.com",
+      link: "https://www.recovereo.com",
     },
     {
       id: 1,
@@ -18,14 +18,14 @@ function Project() {
       description:
         "Plateforme d'assurance en ligne (Maison, Voiture, Moto, Smartphone).",
       image: zebranceImg,
-      link: "app.zebrance.com",
+      link: "https://app.zebrance.com",
     },
     {
       id: 2,
       title: "STAR EVALUATOR",
       description: "Plateforme gère les avis sur le produit et le site web.",
       image: starEvaluatorImg,
-      link: "www.starevaluator.com",
+      link: "https://www.starevaluator.com",
     },
   ];
 
