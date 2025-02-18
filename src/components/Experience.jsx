@@ -5,10 +5,10 @@ function Experience() {
     <div className="px-7 md:px-10 my-20" id="experience">
       <div className="max-w-7xl mx-auto pt-20">
         <h1 className="text-3xl md:text-5xl my-5 text-blue-400 font-semibold">
-          Experiences :
+          Expériences :
         </h1>
         <p className="text-white my-2 md:w-2/3 leading-[2]">
-          These are the technologies I've worked with
+          Voici les technologies avec lesquelles j'ai travaillé.
         </p>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 text-center">
