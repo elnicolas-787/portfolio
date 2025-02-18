@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import facebook from "../assets/facebook.png";
-import twitter from "../assets/x-twitter.png";
-import tictoc from "../assets/tic-tac.png";
+// import twitter from "../assets/x-twitter.png";
+// import tictoc from "../assets/tic-tac.png";
 import linkdin from "../assets/linkedin.png";
 
 function Contact() {
