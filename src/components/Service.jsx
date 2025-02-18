@@ -4,24 +4,24 @@ function Service() {
   const services = [
     {
       id: 1,
-      name: "UI & UX DESIGNING",
+      name: "UI & UX",
       description: "I design beautiful web interfaces with Figma.",
       image: "/assets/icons/design.png",
       alt: "Design"
     },
     {
       id: 2,
-      name: "WEB DEVELOPMENT",
+      name: "WEB",
       description:
-        "I create beautiful interfaces with simple HTML, CSS & Javascript and also frameworks like ReactJs and VueJs.",
+        "Je crée de belles interfaces avec du HTML, CSS et JavaScript simples, ainsi que des frameworks comme ReactJs et VueJs.",
       image: "/assets/icons/web-dev.png",
       alt: "Web Development"
     },
     {
       id: 3,
-      name: "MOBILE DEVELOPMENT",
+      name: "MOBILE",
       description:
-        "I am an expert mobile developer, I have experience using React Native.",
+        "Je suis un développeur mobile expert, j'ai de l'expérience avec React Native.",
       image: "/assets/icons/mob-dev.png",
       alt: "Mobile Development"
     },
@@ -29,7 +29,7 @@ function Service() {
       id: 4,
       name: "NPM AND NODEJS",
       description:
-        "I have core understanding of NPM. I can also develop general purpose application with NodeJS.",
+        "J'ai une compréhension approfondie de NPM. Je peux également développer des applications à usage général avec NodeJS.",
       image: "/assets/icons/node-js.png",
       alt: "Node Js"
     },
@@ -38,7 +38,7 @@ function Service() {
   return (
     <div>
       <h1 className="text-blue-400 font-semibold text-3xl md:text-5xl mt-14 mb-10">
-        The services i offer :
+        Les services que je propose :
       </h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 my-5 sm:px-2 md:px-10 lg:px-0">
         {services.map((service) => (
