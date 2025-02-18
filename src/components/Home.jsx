@@ -13,7 +13,7 @@ function Home() {
               Tahirinirina Nicolas
             </h1>
             <p className="md:w-96">
-              Fullstack developer. I am seamless web experience for end-users.
+              Développeur fullstack. Je crée une expérience web fluide pour les utilisateurs finaux.
             </p>
 
             <div className="mt-10">
@@ -22,7 +22,7 @@ function Home() {
                 download="CV Nicolas"
                 className="btn font-semibold outline-none bg-blue-400 py-2.5 px-4 text-white rounded-lg hover:bg-white hover:text-blue-400 transition-all duration-500"
               >
-                Download CV
+                Télécharger CV
               </a>
               <Link
                 activeClass="active"
@@ -33,7 +33,7 @@ function Home() {
                 duration={500}
                 className="btn cursor-pointer font-semibold outline-none px-6 py-2 rounded-lg border-2 border-blue-400 text-blue-400 ml-5 hover:border-white hover:text-white transition-all duration-500"
               >
-                Contact info
+                Contact
               </Link>
               {/* <button className='btn font-semibold outline-none px-6 py-1.5 rounded-lg border-2 border-blue-400 text-blue-400 ml-5 hover:border-white hover:text-white transition-all duration-500'>Contact info</button> */}
             </div>
