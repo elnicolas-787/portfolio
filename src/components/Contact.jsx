@@ -87,7 +87,7 @@ function Contact() {
                 type="text"
                 name="name"
                 value={nameCli}
-                placeholder="Name: "
+                placeholder="Nom: "
                 className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none focus:border focus:border-blue-400 transition-all duration-500"
                 onChange={handleNameCli}
               />
