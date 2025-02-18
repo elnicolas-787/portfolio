@@ -1,4 +1,5 @@
 import React from "react";
+import recovereoImg from "../assets/recovereo.png";
 import zebranceImg from "../assets/zebrance.png";
 import starEvaluatorImg from "../assets/star-evaluator.png";
 
