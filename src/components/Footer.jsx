@@ -6,8 +6,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto pt-20">
         <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
           <p>@ Copyright 2024 | Tahirinirina Nicolas</p>
-          <p className="hidden sm:block">Fullstack Developer</p>
-          <p className="hidden sm:block">Mobile Developer</p>
+          <p className="hidden sm:block">Développeur Fullstack</p>
+          <p className="hidden sm:block">Développeur Mobile</p>
           <p className="hidden sm:block">UI Designer</p>
         </div>
 
