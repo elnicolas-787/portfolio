@@ -16,7 +16,7 @@ function Home() {
               Développeur fullstack. Je crée une expérience web fluide pour les utilisateurs finaux.
             </p>
 
-            <div className="max-sm:block mt-10">
+            <div className="flex flex-col sm:flex-row sm:justify-start sm:space-x-5 mt-10">
               <a
                 href="/assets/files/CV_Nicolas.pdf"
                 download="CV Nicolas"
