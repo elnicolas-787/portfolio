@@ -18,8 +18,8 @@ function Home() {
 
             <div className="flex flex-col gap-3 sm:gap-5 sm:flex-row sm:justify-start mt-10">
               <a
-                href="/assets/files/CV-Nicolas.pdf"
-                download="CV Nicolas"
+                href="/assets/CV_Nicolas.pdf"
+                download="CV_Nicolas.pdf"
                 className="text-center btn font-semibold outline-none bg-blue-400 py-2.5 px-4 text-white rounded-lg hover:bg-white hover:text-blue-400 transition-all duration-500"
               >
                 Télécharger CV
