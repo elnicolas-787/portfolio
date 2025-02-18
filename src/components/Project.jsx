@@ -5,23 +5,24 @@ import starEvaluatorImg from "../assets/star-evaluator.png";
 function Project() {
   const projects = [
     {
-      id: 1,
-      title: "GESTION DE PRODUCTION",
-      description: "Plateform manage production the sea product in usine",
-      link: "/",
+      id: 3,
+      title: "RECOVEREO",
+      image: recovereoImg,
+      description: "Plateforme spécialisée dans le recouvrement de créances, aidant les créanciers à sécuriser et gérer leurs paiements impayés grâce à des solutions amiables et judiciaires",
+      link: "www.recovereo.com",
     },
     {
-      id: 2,
+      id: 1,
       title: "ZEBRANCE",
       description:
-        "Plateform for assurance(House, Car, Motor, Smartphone) online",
+        "Plateforme d'assurance en ligne (Maison, Voiture, Moto, Smartphone).",
       image: zebranceImg,
       link: "app.zebrance.com",
     },
     {
-      id: 3,
+      id: 2,
       title: "STAR EVALUATOR",
-      description: "Plateform manage reviews the product and website",
+      description: "Plateforme gère les avis sur le produit et le site web.",
       image: starEvaluatorImg,
       link: "www.starevaluator.com",
     },
@@ -31,11 +32,10 @@ function Project() {
     <div className="px-7 md:px-10 my-20" id="project">
       <div className="max-w-7xl mx-auto pt-20">
         <h1 className="text-3xl md:text-5xl my-5 text-blue-400 font-semibold">
-          Featured projects :
+          Projets :
         </h1>
         <p className="text-white my-2 md:w-2/3 leading-[2]">
-          I have worked on many projects over the course of being a Web
-          Developer, here are a few of my live, real-world projects.{" "}
+          J'ai travaillé sur de nombreux projets en tant que développeur web ; voici quelques-uns de mes projets réels en ligne.{" "}
         </p>
 
         {/* Featured project */}
