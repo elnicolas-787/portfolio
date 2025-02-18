@@ -52,34 +52,34 @@ function Contact() {
     <div className="px-7 md:px-10 my-10" id="contact">
       <div className="max-w-7xl mx-auto pt-20">
         <h1 className="text-3xl md:text-5xl my-5 text-blue-400 font-semibold">
-          Connect with me :
+          Contact :
         </h1>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
             <p className="text-white my-2 md:w-2/3 leading-[2]">
-              Satisfied with me? Please contact me{" "}
+              Vous êtes satisfait de mes services ? N'hésitez pas à me contacter.{" "}
             </p>
 
             {/* social icon */}
             <div className="flex">
-              <a href="/">
+              <a href="https://www.facebook.com/profile.php?id=61551025183253">
                 <img src={facebook} alt="Facebook" width={30} />
               </a>
-              <a href="/" className="ml-4">
+              <a href="https://www.linkedin.com/in/tahirinirina-nicolas-7a0994336/" className="ml-4">
                 <img src={linkdin} alt="Linkedin" width={30} />
               </a>
-              <a href="/" className="ml-4">
+              {/* <a href="/" className="ml-4">
                 <img src={twitter} alt="Twitter" width={30} />
               </a>
               <a href="/" className="ml-4">
                 <img src={tictoc} alt="Tic Toc" width={30} />
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div className="md:w-1/2">
             <p className="mt-14 md:mt-0 text-white text-xl mb-6">
-              Contact me, let's make magic together
+              Contactez-moi, créons de la magie ensemble.
             </p>
 
             <div className="space-y-5">
@@ -118,7 +118,7 @@ function Contact() {
                     : "cursor-pointer bg-blue-400"
                 }`}
               >
-                Send message
+                Envoyer
                 {loading ? (
                   <svg
                     width="20"
