@@ -4,10 +4,10 @@ import { XMarkIcon, Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 
 function Header() {
   const links = [
-    { id: 1, name: "Home", link: "home" },
-    { id: 2, name: "About me", link: "about" },
-    { id: 3, name: "Projects", link: "project" },
-    { id: 3, name: "Experiences", link: "experience" },
+    { id: 1, name: "Accueil", link: "home" },
+    { id: 2, name: "À propos", link: "about" },
+    { id: 3, name: "Projets", link: "project" },
+    { id: 3, name: "Expériences", link: "experience" },
     { id: 4, name: "Contact", link: "contact" },
   ];
 
