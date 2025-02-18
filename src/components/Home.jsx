@@ -7,7 +7,7 @@ function Home() {
     <div className="px-7 md:px-10 mt-14 md:h-screen" id="home">
       <div className="max-w-7xl mx-auto pt-20">
         <div className="w-full flex flex-col md:flex-row items-center justify-between">
-          <div className="text-white py-20 md:pt-0">
+          <div className="text-white pt-20 md:pt-0">
             <h6 className="text-3xl">Bonjour, je suis</h6>
             <h1 className="font-semibold text-3xl md:text-5xl my-4">
               Tahirinirina Nicolas
