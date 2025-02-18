@@ -31,7 +31,7 @@ function Home() {
                 smooth={true}
                 offset={50}
                 duration={500}
-                className="text-center btn cursor-pointer font-semibold outline-none px-6 py-2 rounded-lg border-2 border-blue-400 text-blue-400 ml-5 hover:border-white hover:text-white transition-all duration-500"
+                className="text-center btn cursor-pointer font-semibold outline-none px-6 py-2 rounded-lg border-2 border-blue-400 text-blue-400 hover:border-white hover:text-white transition-all duration-500"
               >
                 Contact
               </Link>
