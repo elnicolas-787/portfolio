@@ -31,7 +31,7 @@ function Service() {
       description:
         "J'ai une compréhension approfondie de NPM. Je peux également développer des applications à usage général avec NodeJS.",
       image: "/assets/icons/node-js.png",
-      alt: "Node Js"
+      alt: "NodeJs"
     },
   ];
 
