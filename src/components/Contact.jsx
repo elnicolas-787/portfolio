@@ -10,6 +10,12 @@ function Contact() {
   const [messageCli, setMessageCli] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const handleNameCli = (e) => {
     setNameCli(e.target.value);
   };
@@ -19,7 +25,39 @@ function Contact() {
   const handleMessageCli = (e) => {
     setMessageCli(e.target.value);
   };
+
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = { name: "", email: "", message: "" };
+
+    if (!nameCli.trim()) {
+      newErrors.name = "Le nom est requis.";
+      valid = false;
+    }
+
+    if (!emailCli.trim()) {
+      newErrors.email = "L'email est requis.";
+      valid = false;
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailCli)) {
+        newErrors.email = "Adresse email invalide.";
+        valid = false;
+      }
+    }
+
+    if (!messageCli.trim()) {
+      newErrors.message = "Le message est requis.";
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
   const handleSendMessage = () => {
+    if (!validateForm()) return;
+
     setLoading(true);
 
     const formData = {
@@ -49,9 +87,9 @@ function Contact() {
   };
 
   return (
-    <div className="px-7 md:px-10 my-10" id="contact">
-      <div className="max-w-7xl mx-auto pt-20">
-        <h1 className="text-3xl md:text-5xl my-5 text-blue-400 font-semibold">
+    <div className="my-10 px-7 md:px-10" id="contact">
+      <div className="pt-20 mx-auto max-w-7xl">
+        <h1 className="my-5 text-3xl font-semibold text-blue-400 md:text-5xl">
           Contact :
         </h1>
 
@@ -78,7 +116,7 @@ function Contact() {
                 </svg>
                 <a
                   href="mailto:tahirinirina.nicolas@gmail.com"
-                  className="text-white max-sm:text-sm ml-4"
+                  className="ml-4 text-white max-sm:text-sm"
                 >
                   tahirinirina.nicolas@gmail.com
                 </a>
@@ -97,7 +135,7 @@ function Contact() {
                     data-original="#000000"
                   ></path>
                 </svg>
-                <span className="text-white max-sm:text-sm ml-4">
+                <span className="ml-4 text-white max-sm:text-sm">
                   +261 34 17 350 32 / +261 37 61 004 98
                 </span>
               </li>
@@ -115,7 +153,7 @@ function Contact() {
                     data-original="#000000"
                   ></path>
                 </svg>
-                <span className="text-white max-sm:text-sm ml-4">
+                <span className="ml-4 text-white max-sm:text-sm">
                   Avenue de Port Mahavatse II, Tuléar 601
                 </span>
               </li>
@@ -135,35 +173,58 @@ function Contact() {
           </div>
 
           <div className="md:w-1/2">
-            <p className="mt-14 md:mt-0 text-white text-xl mb-6">
+            <p className="mb-6 text-xl text-white mt-14 md:mt-0">
               Contactez-moi, créons de la magie ensemble.
             </p>
 
             <div className="space-y-5">
-              <input
-                type="text"
-                name="name"
-                value={nameCli}
-                placeholder="Nom: "
-                className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none focus:border focus:border-blue-400 transition-all duration-500"
-                onChange={handleNameCli}
-              />
-              <input
-                type="email"
-                name="email"
-                value={emailCli}
-                placeholder="Email: "
-                className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none focus:border focus:border-blue-400 transition-all duration-500"
-                onChange={handleEmailCli}
-              />
-              <textarea
-                name="message"
-                value={messageCli}
-                placeholder="Message:"
-                rows={5}
-                className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none focus:border focus:border-blue-400 transition-all duration-500"
-                onChange={handleMessageCli}
-              ></textarea>
+              <div className="space-y-0.5">
+                <input
+                  type="text"
+                  name="name"
+                  value={nameCli}
+                  placeholder="Nom: "
+                  className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none transition-all duration-500 focus:ring-1 focus:ring-blue-400"
+                  onChange={handleNameCli}
+                />
+                {errors.name && (
+                  <p className="mt-1 text-xs text-red-400 sm:text-sm">
+                    {errors.name}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-0.5">
+                <input
+                  type="email"
+                  name="email"
+                  value={emailCli}
+                  placeholder="Email: "
+                  className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none transition-all duration-500 focus:ring-1 focus:ring-blue-400"
+                  onChange={handleEmailCli}
+                />
+                {errors.email && (
+                  <p className="mt-1 text-xs text-red-400 sm:text-sm">
+                    {errors.email}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-0.5">
+                <textarea
+                  name="message"
+                  value={messageCli}
+                  placeholder="Message:"
+                  rows={5}
+                  className="bg-[#F5F5F5] text-white bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded-lg outline-none transition-all duration-500 focus:ring-1 focus:ring-blue-400"
+                  onChange={handleMessageCli}
+                ></textarea>
+                {errors.message && (
+                  <p className="mt-1 text-xs text-red-400 sm:text-sm">
+                    {errors.message}
+                  </p>
+                )}
+              </div>
 
               <button
                 type="button"
@@ -189,7 +250,7 @@ function Contact() {
                   </svg>
                 ) : (
                   <svg
-                    className="w-4 h-4 rotate-90 rtl:-rotate-90 ml-3"
+                    className="w-4 h-4 ml-3 rotate-90 rtl:-rotate-90"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
